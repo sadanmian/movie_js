@@ -6,7 +6,10 @@ arrow.forEach((event, index) => {
   let clickCounter = 0;
   event.addEventListener("click", () => {
     clickCounter++;
-    if (itemNumber - (4 + clickCounter) >= 0) {
+    if (
+      itemNumber - (Math.floor(window.innerWidth / 270) + clickCounter) >=
+      0
+    ) {
       movieList[index].style.transform = `translateX(${
         movieList[index].computedStyleMap().get("transform")[0].x.value - 300
       }px)`;

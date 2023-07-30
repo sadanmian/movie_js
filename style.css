@@ -91,7 +91,7 @@ body{
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .sidebar{
@@ -266,4 +266,39 @@ body{
 .toggle-ball.active{
     background-color: white;
     transform: translateX(-20px);
+}
+
+@media only screen and (max-width:940px){
+    .menu-container{
+        display: none;
+    }
+
+    p{
+        display: none;
+    }
+
+    .sidebar{
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+    }
+
+    img{
+        object-fit: cover;
+    }
+
+    .arrow{
+        font-size: 75px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .movie-list-item-img {
+        transition: all 0.5s ease-in-out;
+        width: 280px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
 }
