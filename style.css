@@ -295,10 +295,20 @@ body{
 
     .movie-list-item-img {
         transition: all 0.5s ease-in-out;
-        width: 280px;
+        width: 270px;
         height: 200px;
         object-fit: cover;
         border-radius: 10px;
+    }
+
+    .profile-container{
+        transform: translateX(40px);
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    .featured-content{
+        height: 20vh;
     }
 
 }
